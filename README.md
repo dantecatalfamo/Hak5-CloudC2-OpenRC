@@ -29,6 +29,8 @@ to the `C2_OPTS` variable like this:
 C2_OPTS="-reverseProxy -reverseProxyPort XXX"
 ```
 
+NOTE: You MUST set `C2_HOSTNAME` for the daemon to launch.
+
 ## Starting the daemon
 
 After following the setup, all you have to do to launch CloudC2 is run
