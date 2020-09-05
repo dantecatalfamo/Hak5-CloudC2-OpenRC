@@ -33,8 +33,8 @@ NOTE: You MUST set `C2_HOSTNAME` for the daemon to launch.
 
 ## Starting the daemon
 
-After following the setup, all you have to do to launch CloudCin the
-background2 is run
+After following the setup, all you have to do to launch CloudC2 in the
+background is run
 
 ```
 rc-service cloudc2 start
