@@ -8,8 +8,9 @@ daemon on Alpine Linux
 To set things up, once you download the Cloud C2 zip file from the
 Hak5 website, and create the directory `/opt/cloudc2/` on your Alpine
 Linux system. Then extract the files and copy `c2_community-linux-32`
-(or whichever matches your architecture) to the newly created
-`/opt/cloudc2/`.
+to the newly created `/opt/cloudc2/`. If you're on a non-x86 platform,
+you'll have to select the corresponding binary and modify the `init.d` 
+file to point to the correct path.
 
 NOTE: `c2_community-linux-64` will not work on Alpine Linux. It's
 dynamically linked to `/lib64/ld-linux-x86-64.so.2`, which doesn't
