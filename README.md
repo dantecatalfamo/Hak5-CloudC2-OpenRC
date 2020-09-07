@@ -50,5 +50,5 @@ rc-update add cloudc2
 
 When registering your CloudC2 instance, you'll need a setup
 token. This token gets outputted from `cloudc2` the first time it
-runs. This should appear in `/opt/cloudc2/log` a couple seconds after
+runs. This should appear in `/var/log/cloudc2.log` a couple seconds after
 the first time it gets launched.
