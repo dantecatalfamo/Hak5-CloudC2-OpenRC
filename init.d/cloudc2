@@ -3,9 +3,9 @@
 name=$RC_SVCNAME
 description="Hak5 CloudC2 Management Dashboard"
 supervisor="supervise-daemon"
-supervise_daemon_args="-1 ${C2_LOG} -2 ${C2_LOG}"
+supervise_daemon_args="-1 /var/log/cloudc2.log -2 /var/log/cloudc2.log"
 command="/opt/cloudc2/c2_community-linux-32"
-command_args="-listenip ${C2_LISTEN_IP} -hostname ${C2_HOSTNAME} -listenport ${C2_LISTEN_PORT} -db ${C2_DB} -sshport ${C2_SSH_PORT} ${C2_OPTS}"
+command_args="-listenip ${C2_LISTEN_IP} -hostname ${C2_HOSTNAME} -listenport ${C2_LISTEN_PORT} -db /var/opt/cloudc2.db -sshport ${C2_SSH_PORT} ${C2_OPTS}"
 
 depend() {
     need net
